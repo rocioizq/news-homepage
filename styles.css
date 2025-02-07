@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", serif;
+    font-size: 16px;
+    min-height: 100vh;
+    margin: 2em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(36, 100%, 99%);
+    padding: 15em 2em;
+    width: 300px;
+    height: 100vh;
+    transition: trasnform 0.2s ease-in-out;
+    box-shadow: 0 0 0 100vmax rgba(24, 24, 24, 0.5);
+}
+
+nav.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.icon-menu-close {
+    cursor: pointer;
+    position: absolute;
+    top: 1.5em;
+    right: 1.5em;
+}
+
+.icon-menu,
+.icon-menu-close {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.menu li {
+    text-decoration: none;
+    color: hsl(240, 100%, 5%);
+    padding: 1rem 0;
+    font-size: 1.5em;
+}
+
+.menu li:hover {
+    cursor: pointer;
+    color:hsl(5, 85%, 63%) ;
+}
+
+.principal-image-mobile {
+    width: 100%;
+    margin-block: 2em;
+}
+
+.principal-image-desktop {
+    display: none;
+}
+
+h1 {
+   font-size: 3em; 
+   font-weight: 800;
+   line-height: 1em;
+   color: hsl(240, 100%, 5%);
+}
+
+p {
+    color: hsl(236, 13%, 42%);
+    font-size: 1.13em;
+    margin-block: 1em;
+}
+
+.read-more {
+    padding: 1.2em 2.3em;
+    text-transform: uppercase;
+    background-color: hsl(5, 85%, 63%) ;
+    border: none;
+    font-size: 1.1em;
+    font-weight: 800;
+    letter-spacing: .2em;
+    color: hsl(240, 100%, 5%);
+}
+
+.read-more:hover {
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+    cursor: pointer;
+}
+
+.second {
+    margin-block: 4em;
+    padding: 2em;
+    background-color: hsl(240, 100%, 5%);
+}
+
+.second h2 {
+    color: hsl(35, 77%, 62%);
+}
+
+.second h3 {
+    color: hsl(36, 100%, 99%);
+    font-size: 1.4em;
+    margin-block: .5em;
+}
+
+.second h3:hover {
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+
+.second p {
+    color: hsl(236, 13%, 42%);
+    margin-bottom: 1.5em;
+}
+
+.divider {
+    height: .5px;
+    background-color: hsl(36, 100%, 99%);
+    width: 100%;
+    margin: 40px 0;
+}
+
+.third img {
+    width: 40%;
+}
+
+.top-img, .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.retro-pc, .top-ten-laptops, .growth-gaming {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.3em;
+    margin-block: 2em;
+}
+
+.text h2 {
+    color: hsl(5, 85%, 63%);
+    font-size: 2.5em;
+    font-weight: 800;
+}
+
+.text h3 {
+    font-size: 1.3em;
+    font-weight: 800;
+}
+
+.text h3:hover{
+    cursor: pointer;
+    color: hsl(5, 85%, 63%);
+}
+
+@media (min-width: 1000px) {
+    body {
+        margin: 4em;
+
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2em;
+    }
+
+    .principal-image-desktop {
+        display: block;
+        max-width: 100%;
+        margin-bottom: 3em;
+    }
+
+    .principal-image-mobile {
+        display: none;
+    }
+
+    .icon-menu, .icon-menu-close {
+        display: none;
+    }
+  
+    nav {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+        background-color: transparent;
+        box-shadow: none;
+        position: static;
+        padding: 0;
+        width: auto;
+        height: auto;
+    }
+
+    .menu {
+        display: flex;
+        gap: 5rem;
+    }
+
+    .menu li {
+        font-size: 1.2em;
+        color: hsl(236, 13%, 42%);
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 2em;
+    }
+
+    .first {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .second {
+        display: grid;
+        align-items: center;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        margin: 0;
+        padding: 3em;
+    }
+
+    .third {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        margin-block: 3em;
+    }
+
+    .first-text {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 1em;
+    }
+
+    .first-text h1 {
+        font-size: 5em;
+        grid-column: 1 / 2;
+    }
+
+    .first-text p {
+        grid-column: 2 / 3;
+        font-size: 1.5em;
+        line-height: 2em;
+        margin: 0;
+    }
+
+    .read-more {
+        grid-column: 2 / 3;
+        align-self: start;
+        width: 50%;
+    }
+
+    .second h2 {
+        font-size: 3em;
+    }
+
+    .second h3 {
+        font-size: 1.5em;
+        margin-top: 1.3em;
+    }
+
+    .second p {
+        font-size: 1.3em;
+    }
+
+    .top-three {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+        margin: 0 auto;
+    }
+
+    .top-three h3 {
+        font-size: 1.8em;
+    }
+
+    .text p {
+        font-size: 1.5em;
+    }
+
+    
+}
