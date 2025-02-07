@@ -2,7 +2,7 @@
 
 Este proyecto es una solución al desafío de Frontend Mentor llamado **News Homepage**. El objetivo es crear una página de inicio de noticias, diseñada de manera responsiva, utilizando HTML, CSS y un poco de JavaScript.
 
-- [Sitio web](https://tu-usuario.github.io/nombre-del-repositorio/)
+- [Sitio web](https://news-homepage-rust-eight.vercel.app/)
 
 ## Descripción
 
