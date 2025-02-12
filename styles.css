@@ -34,7 +34,7 @@ nav {
     padding: 15em 2em;
     width: 300px;
     height: 100vh;
-    transition: trasnform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
     box-shadow: 0 0 0 100vmax rgba(24, 24, 24, 0.5);
 }
 
