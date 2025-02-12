@@ -1,30 +1,32 @@
-# Frontend Mentor | News Homepage
+# 📰 News Homepage  
 
-Este proyecto es una solución al desafío de Frontend Mentor llamado **News Homepage**. El objetivo es crear una página de inicio de noticias, diseñada de manera responsiva, utilizando HTML, CSS y un poco de JavaScript.
+This project is a solution to the [Frontend Mentor](https://www.frontendmentor.io/) challenge called **News Homepage**.  
 
-- [Sitio web](https://news-homepage-rust-eight.vercel.app/)
+🔗 **[Live Demo](https://news-homepage-rust-eight.vercel.app/)**  
 
-## Descripción
+## 📌 Description  
+This is a responsive news homepage that displays articles and news highlights in a modular and adaptive layout.  
 
-Este proyecto consiste en una página web que presenta noticias y artículos con una estructura modular y adaptativa. Está optimizada para ser visualizada en diferentes tamaños de pantalla, utilizando un diseño en cuadrícula (`grid`) y un menú interactivo con un diseño móvil adaptativo.
+## 🚀 Features  
+✅ Mobile-friendly hamburger menu  
+✅ Responsive design using **CSS Grid** and **Flexbox**  
+✅ Adaptive images for different screen sizes  
+✅ Interactive "Read More" button  
 
-## Funcionalidades
+## 🛠 Technologies Used  
+- **HTML5** for structure  
+- **CSS3** with **Grid** and **Flexbox**  
+- **JavaScript** for the navigation menu  
+- **Google Fonts** (Inter)  
+- **SVG** for icons  
 
-- **Menú de navegación**: Un menú de hamburguesa que aparece en dispositivos móviles y una barra de navegación estática para pantallas más grandes.
-- **Diseño responsive**: La página se adapta a diferentes tamaños de pantalla utilizando `media queries` y técnicas de diseño flexibles.
-- **Interactividad**: El botón "Read More" está disponible para interactuar con los usuarios y permite mostrar más contenido en la interfaz.
-- **Imágenes adaptativas**: Se utilizan imágenes diferentes para dispositivos móviles y de escritorio.
+## 📸 Preview  
+![News Homepage Screenshot](/design/desktop-preview.jpg)  
 
-## Tecnologías
+## 🏗 Installation  
+1️⃣ Clone the repository:  
+```sh
+git clone https://github.com/rocioizq/news-homepage.git
 
-Este proyecto utiliza las siguientes tecnologías:
+2️⃣ Open index.html in your browser
 
-- **HTML5**: Para la estructura y semántica del contenido.
-- **CSS3**: Para los estilos y el diseño responsivo utilizando `flexbox` y `grid`.
-- **JavaScript**: Para la interacción con el menú de hamburguesa.
-- **Google Fonts**: Para la tipografía (Inter).
-- **SVG**: Para los íconos.
-
-## Captura de pantalla
-
-![Vista previa](/design/desktop-preview.jpg)
